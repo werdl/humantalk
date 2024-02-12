@@ -9,7 +9,7 @@ pub use console::{style, Color};
 use std::{collections::HashMap, io::Write};
 
 /// version of humantalk, manually updated each release
-pub const VERSION: &str = "0.1.0";
+pub const VERSION: &str = "0.1.1";
 
 use rustc_version::version_meta;
 
