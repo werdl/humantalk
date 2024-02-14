@@ -1,6 +1,6 @@
 [package]
 name = "humantalk"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "A simple libary for better end-user communication"
 license = "MIT"
@@ -12,3 +12,4 @@ homepage = "https://github.com/werdl/humantalk"
 [dependencies]
 console = "0.15.8"
 rustc_version = "0.4.0"
+thetime = "0.5.6"

@@ -8,6 +8,8 @@
 pub use console::{style, Color};
 use std::{collections::HashMap, io::Write};
 
+use thetime::{System, Time};
+
 /// version of humantalk, manually updated each release
 pub const VERSION: &str = "0.1.1";
 
@@ -149,7 +151,7 @@ impl Config {
         }
 
         let color = self.get_color(&severity);
-        let styled = style(format!("[{}] {}", severity, message)).color256(color.to_color256());
+        let styled = style(format!("({}) [{}] {}", System::now().strftime("%H:%m:%S%p"), severity, message)).color256(color.to_color256());
         println!("{}", styled);
     }
     
